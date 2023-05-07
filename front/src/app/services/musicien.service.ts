@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/internal/Observable';
 import { environment } from 'src/environments/environment';
 
 @Injectable({ providedIn: 'root' })
-export class BrandGameService {
+export class MusicienService {
   private baseUrl = environment.API_URL;
 
   constructor(private http: HttpClient) {}

@@ -1,1 +1,5 @@
-<div>Liste Musicien Component</div>
+<div>
+  <div class="card" *ngFor="let musicien of listMusicien">
+    <component-musicien [musicien]="musicien"></component-musicien>
+  </div>
+</div>
