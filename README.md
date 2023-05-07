@@ -1,5 +1,11 @@
 # test_code_gamma
 
+## Objectif
+
+Réalisation d’un système d’import du fichier Excel en pièce jointe, avec une interface de gestion des données.
+
+## Miste en place stack
+
 1/ Deployer dans l'environnement de dev
 - `docker-compose build`
 - `docker-compose run --rm --entrypoint=npm frontend install`
@@ -24,7 +30,7 @@
 | database        | MySQL / 8             |                       |
 | phpmyadmin      |                       | http://localhost:81   |
 | backend         | PHP 8.0 / Symfony 5+  | http://localhost:8001 |
-| frontend        | Node 20 /Angular 16   | http://localhost:4201 |
+| frontend        | Node 20 / Angular 16  | http://localhost:4201 |
 
 - phpmyadmin server : `database`
 - phpmyadmin username / password : `root` / `ChangeMe`
@@ -35,3 +41,7 @@
 
 5/ Deconnecter les conteneurs
 - `docker-compose -f 'docker-compose.yml' down` pour retier les connections des conteneurs
+
+## Note
+
+Il y a un dump de la base de données MySQL dans le dossier `back/test_code_gamma.sql`
