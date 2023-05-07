@@ -6,5 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consult-musicien.component.scss'],
 })
 export class ConsultMusicienComponent implements OnInit {
+  id: string = "";
+
   ngOnInit(): void {}
 }
