@@ -1,15 +1,17 @@
-<div class="card-head">
-  {{ musicien.label }}
-</div>
-<div class="card-body">
-  <ul>
-    <li>Date début : {{ musicien.dateDebut }}</li>
-    <li>Date séparation : {{ musicien.dateSeparation }}</li>
-    <li>Fondateur : {{ musicien.fondateur }}</li>
-    <li>Nombre de membre : {{ musicien.nombreMembre }}</li>
-    <li>Présentation : {{ musicien.presentation }}</li>
-    <li>Pays : {{ musicien.paysOrigin.label }}</li>
-    <li>Ville : {{ musicien.ville.label }}</li>
-    <li>Genre : {{ musicien.genre.label }}</li>
-  </ul>
+<div class="card">
+  <div class="card-head">
+    {{ musicien.label }}
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Date début : {{ musicien.dateDebut }}</li>
+      <li>Date séparation : {{ musicien.dateSeparation }}</li>
+      <li>Fondateur : {{ musicien.fondateur }}</li>
+      <li>Nombre de membre : {{ musicien.nombreMembre }}</li>
+      <li>Présentation : {{ musicien.presentation }}</li>
+      <li>Pays : {{ musicien.paysOrigin.label }}</li>
+      <li>Ville : {{ musicien.ville.label }}</li>
+      <li>Genre : {{ musicien.genre.label }}</li>
+    </ul>
+  </div>
 </div>
