@@ -12,6 +12,12 @@
     - attendre que les conteneurs sont lancés
 - `docker ps` pour lister tout les conteneurs
 
+3/ Initialiser les données fixtures pour certaines entités
+- `docker exec -it Test_Code_GammaSoft_back_ng bash`
+- Faire en sorte de démarrer le service docker `database`
+- `./reset_db.sh` pour retier la base de données et la recréer faire passer les migrations
+- `Ctrl+D` pour quitter le conteneur
+
 ## Services docker
 | Services        | Version               | Path access           |
 |:----------------|:---------------------:|:----------------------|
