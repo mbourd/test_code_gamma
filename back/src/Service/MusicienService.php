@@ -51,13 +51,24 @@ class MusicienService
         }
     }
 
-    public function updateMusicien(Musicien $musicien)
+    public function updateMusicien($id, $data)
     {
+        $musicien = $this->getById($id);
+        $musicien->setLabel($data["label"]);
+        $musicien->setDateDebut($data["dateDebut"]);
+        $musicien->setDateSeparation($data["dateSeparation"]);
+        $musicien->setFondateur($data["fondateur"]);
+        $musicien->setNombreMembre($data["nombreMembre"]);
+        $musicien->setPresentation($data["presentation"]);
+        $musicien->setPaysOrigine($data["paysOrigine"]);
+        $musicien->setVille($data["ville"]);
+        $musicien->setGenre($data["genre"]);
+
         return $this->musicienRepository->add($musicien);
     }
 
-    public function deleteMusicien(Musicien $musicien)
+    public function deleteMusicien($id)
     {
-        $this->musicienRepository->remove($musicien);
+        $this->musicienRepository->remove($this->getById($id));
     }
 }
